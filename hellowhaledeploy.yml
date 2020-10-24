@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
         - name: hellowhalecontainer
-          image: vamsijakkula/hellowhale:latest
+          image: cpbarik1/hellowhale:latest
           imagePullPolicy: Always
           ports:
             - containerPort: 80
