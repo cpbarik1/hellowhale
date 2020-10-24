@@ -25,7 +25,7 @@ spec:
 apiVersion: v1
 kind: Service 
 metadata:
-   name: hello-whale-svc
+   name: hellowhalesvc
    labels:
       app: hellowhaleapp
 spec:
