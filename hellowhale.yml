@@ -2,9 +2,9 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name:hello-blue-whale
+  name: hello-blue-whale
 spec:
-  replicas:5
+  replicas: 5
   selector:
     matchLabels:
       app: hello-whale-app
