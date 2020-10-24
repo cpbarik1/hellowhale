@@ -15,13 +15,13 @@ spec:
       labels:
         app: hello-whale-app
         version: blue
-   spec:
-     containers:
-     - name: hello-whale-container
-       image: vamsijakkula/hellowhale:latest
-       imagePullPolicy: Always
-       ports:
-       - containerPort: 80
+    spec:
+      containers:
+      - name: hello-whale-container
+        image: vamsijakkula/hellowhale:latest
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 80
 
 ---
 apiVersion: v1
