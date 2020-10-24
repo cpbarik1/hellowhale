@@ -13,8 +13,7 @@ pipeline {
       stage("Build image") {
             steps {
                 script {
-                    sh "sudo chown root:jenkins /run/docker.sock"
-                    myapp = docker.build("cpbarik1/hellowhale:${env.BUILD_ID}")
+                   myapp = docker.build("cpbarik1/hellowhale:${env.BUILD_ID}")
                 }
             }
         }
