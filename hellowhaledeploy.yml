@@ -1,22 +1,22 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: hello-blue-whale
+  name: hellobluewhale
 spec:
   replicas: 4
   selector:
     matchLabels:
-      app: hello-whale-app
+      app: hellowhaleapp
       version: blue
   template:
     metadata:
-      name: hello-blue-whale-pod
+      name: hellobluewhalepod
       labels:
-          app: hello-whale-app
+          app: hellowhaleapp
           version: blue
     spec:
       containers:
-        - name: hello-whale-container
+        - name: hellowhalecontainer
           image: vamsijakkula/hellowhale:latest
           imagePullPolicy: Always
           ports:
@@ -27,7 +27,7 @@ kind: Service
 metadata:
    name: hello-whale-svc
    labels:
-      app: hello-whale-app
+      app: hellowhaleapp
 spec:
    type: NodePort
    ports:
@@ -35,5 +35,5 @@ spec:
        port: 80
        targetPort: 80
    selector:
-       app: hello-whale-app
+       app: hellowhaleapp
        version: blue
