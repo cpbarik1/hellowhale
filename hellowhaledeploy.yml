@@ -17,7 +17,7 @@ spec:
      spec:
         containers:
           - name: hello-whale-container
-            image: cpbarik1/hellowhale:latest
+            image: nginx
             imagePullPolicy: Always
             ports: 
               - containerPort: 80
